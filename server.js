@@ -18,5 +18,6 @@ app.get("/*", (req, res) => res.sendFile(path.join(__dirname)));
 const server = http.createServer(app);
 
 server.listen(port, () => {
-  console.log(`Servidor rodando na porta ${port}`);
+  const vercelUrl = 'https://manga-project-khaki.vercel.app' || `localhost:${port}`;
+  console.log(`Servidor rodando na URL http://${vercelUrl}`);
 });
