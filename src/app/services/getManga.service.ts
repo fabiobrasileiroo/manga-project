@@ -3,6 +3,7 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 
 const BASE_URL = 'https://api.mangadex.org'
+// const BASE_URL = 'apiManga'
 const BASE_IMAGE_URL = 'https://uploads.mangadex.org'
 @Injectable({ providedIn: 'root' })
 export class GetMangaService {
