@@ -6,7 +6,7 @@ const cors = require("cors");
 
 const app = express();
 
-const port = process.env.PORT || 80;
+const port = process.env.PORT || 3333;
 
 // Habilita o CORS para todas as origens
 app.use(cors());
@@ -18,6 +18,5 @@ app.get("/*", (req, res) => res.sendFile(path.join(__dirname)));
 const server = http.createServer(app);
 
 server.listen(port, () => {
-  const vercelUrl = 'https://manga-project-khaki.vercel.app' || `localhost:${port}`;
-  console.log(`Servidor rodando na URL http://${vercelUrl}`);
+  console.log(`Servidor rodando na URL http://${port}`);
 });
