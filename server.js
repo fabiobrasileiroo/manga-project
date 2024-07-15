@@ -6,7 +6,7 @@ const cors = require("cors");
 
 const app = express();
 
-const port = process.env.PORT || 8080;
+const port = process.env.PORT || 80;
 
 // Habilita o CORS para todas as origens
 app.use(cors());
